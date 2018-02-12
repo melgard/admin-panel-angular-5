@@ -1,10 +1,11 @@
-import { RouterModule, Routes } from '@angular/router';
+import {RouterModule, Routes} from '@angular/router';
 import {ProgressComponent} from './progress/progress.component';
 import {GraficasComponent} from './graficas/graficas.component';
 import {DashboardComponent} from './dashboard/dashboard.component';
 import {PagesComponent} from './pages.component';
+import {AccountSettingsComponent} from './account-settings/account-settings.component';
 
- const Pages_Routes: Routes = [
+const Pages_Routes: Routes = [
    {
      path: '',
      component: PagesComponent,
@@ -12,6 +13,7 @@ import {PagesComponent} from './pages.component';
        { path: 'progress', component: ProgressComponent},
        { path: 'graficas', component: GraficasComponent},
        { path: 'dashboard', component: DashboardComponent},
+       {path: 'account-settings', component: AccountSettingsComponent},
        { path: '', redirectTo: '/dashboard', pathMatch: 'full'}
      ]
    }

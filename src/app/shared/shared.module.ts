@@ -3,6 +3,8 @@ import {BreadcrumbsComponent} from './breadcrumbs/breadcrumbs.component';
 import {HeaderComponent} from './header/header.component';
 import {SidebarComponent} from './sidebar/sidebar.component';
 import {NotFoundComponent} from './not-found/not-found.component';
+import {RouterModule} from '@angular/router';
+import {CommonModule} from '@angular/common';
 
 @NgModule({
   declarations: [
@@ -10,6 +12,10 @@ import {NotFoundComponent} from './not-found/not-found.component';
     SidebarComponent,
     BreadcrumbsComponent,
     NotFoundComponent
+  ],
+  imports: [
+    CommonModule,
+    RouterModule
   ],
   exports: [
     HeaderComponent,
